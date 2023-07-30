@@ -68,7 +68,7 @@ set expandtab
 set wildmenu
 
 " 开启内置的单词拼写检查
-set spell
+" set spell
 
 set autoindent
 set smartindent
@@ -105,6 +105,8 @@ set incsearch
 set autoread
 
 set nobackup
+set noswapfile
+set noundofile
 set nowritebackup
 
 set updatetime=300
@@ -170,6 +172,9 @@ call dein#add('skywind3000/asyncrun.vim')
 
 call dein#add('tpope/vim-commentary')
 
+" zig.vim
+call dein#add('ziglang/zig.vim')
+
 " call dein#add('dstein64/vim-startuptime')
 
 call dein#end()
@@ -191,8 +196,8 @@ if has('syntax')
   syntax on
 endif
 
-imap <silent> <C-s> :w<CR>
-nmap <silent> <C-s> <ESC>:w<CR>
+nmap <silent> <C-s> :w<CR>
+imap <silent> <C-s> <ESC>:w<CR>
 
 map <silent> q :q<CR>
 map <silent> qq :q!<CR>
@@ -251,6 +256,9 @@ let g:floaterm_keymap_toggle = '<leader>fs'
 let g:floaterm_keymap_kill = '<leader>fc'
 
 " endif
+
+" setting zig.vim
+let g:zig_fmt_autosave = 0
 
 "setting for asynctasks
 let g:asyncrun_open = 6
