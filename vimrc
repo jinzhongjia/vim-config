@@ -35,7 +35,9 @@ set background=dark
 
 " 设置默认终端
 if has("win32")
+  if executable("nu")
     set shell=nu
+  endif
 endif
 
 " 真彩色
@@ -183,6 +185,15 @@ call dein#end()
 if dein#check_install()
   call dein#install()
 endif
+
+if !executable("rg")
+  echo "not found ripgrep"
+endif
+
+if !executable("nu")
+  echo "not found nu"
+endif
+
 
 " 关闭兼容模式
 set nocompatible
