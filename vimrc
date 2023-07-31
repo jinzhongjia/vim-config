@@ -35,8 +35,12 @@ set background=dark
 
 " 设置默认终端
 if has("win32")
-  if executable("nu")
-    set shell=nu
+  if and(executable("nu"), executable("pwsh"))
+    if has("gui_running")
+      set shell=nu
+    else
+      set shell=pwsh
+    endif
   endif
 endif
 
@@ -116,7 +120,7 @@ set timeoutlen=500
 
 " 注意这里设置字体，不同平台有区别
 if has('win32')
-  set guifont=Maple_Mono_NF:h18
+  set guifont=Maple_Mono_NF:h16
 else
   set guifont=Maple\ Mono\ NF\ 16
 endif
