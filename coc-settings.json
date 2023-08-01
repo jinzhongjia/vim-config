@@ -8,7 +8,7 @@
     "o": ["expandable?", ["expanded?", "collapse", "expand"], "open"]
   },
   "rust-analyzer.enable": true,
-  "codeLens.enable": true,
+  "codeLens.enable": false,
   "semanticTokens.enable": true,
   "links.enable": true,
   "coc.preferences.formatOnType": true,

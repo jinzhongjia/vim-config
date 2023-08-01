@@ -83,6 +83,9 @@ set whichwrap="<,>,[,]"
 set list
 set listchars="space:·,tab:··,eol:↴"
 
+set foldlevel=99
+set foldlevelstart=99
+
 set splitbelow
 set splitright
 
@@ -131,7 +134,7 @@ set guioptions-=t
 set guioptions-=r
 set guioptions-=l
 set guioptions-=b 
-
+set guioptions-=m
 
 " 显示行号
 set signcolumn=yes
@@ -230,6 +233,11 @@ map <silent> so :only<CR>
 vmap <silent> <C-c> "+y
 vmap <silent> <C-x> "+d
 imap <silent> <C-v> <ESC>"+pa
+
+
+if has("gui_running")
+  command! -nargs=0 Browser :browse confirm e
+endif
 
 " 主题设置
 autocmd vimenter * ++nested colorscheme gruvbox
@@ -409,3 +417,4 @@ vmap <silent> <leader>tl <Plug>(coc-translator-pv)
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
 " provide custom statusline: lightline.vim, vim-airline
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+map <silent> <leader>zz :call CocActionAsync('fold')<cr>
