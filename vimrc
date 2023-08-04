@@ -197,10 +197,11 @@ if !executable("rg")
   echo "not found ripgrep"
 endif
 
-if !executable("nu")
-  echo "not found nu"
+if has("win32")
+  if !executable("nu")
+    echo "not found nu"
+  endif 
 endif
-
 
 " 关闭兼容模式
 set nocompatible
