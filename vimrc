@@ -31,7 +31,12 @@ endif
 
 " 执行用户设置
 
-set background=dark
+" 根据是否为gui,来设置主题的颜色
+if has("gui_running") 
+  set background=light
+else
+  set background=dark
+endif
 
 " 设置默认终端
 if has("win32")
