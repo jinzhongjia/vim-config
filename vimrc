@@ -135,6 +135,8 @@ set guioptions-=r
 set guioptions-=l
 set guioptions-=b 
 set guioptions-=m
+set guioptions-=R
+set guioptions-=L
 
 " 显示行号
 set signcolumn=yes

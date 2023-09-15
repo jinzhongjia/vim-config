@@ -69,5 +69,5 @@
     "yarp"
   ],
   "rust-analyzer.disableProgressNotifications": true,
-  "zig.zls.path": "C:\\Users\\jinzh\\AppData\\Local\\coc\\extensions\\coc-zls-data\\zls_install\\zls.exe"
+  "zig.zls.path": "/home/jin/.config/coc/extensions/coc-zls-data/zls_install/zls"
 }
