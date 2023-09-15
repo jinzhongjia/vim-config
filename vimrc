@@ -169,8 +169,8 @@ call dein#add('voldikss/vim-floaterm')
 call dein#add('morhetz/gruvbox')
 
 " vim-airline
-call dein#add('vim-airline/vim-airline', {'depends':'vim-airline/vim-airline-themes'})
 call dein#add('vim-airline/vim-airline-themes')
+call dein#add('vim-airline/vim-airline', {'depends':'vim-airline/vim-airline-themes'})
 
 " coc.nvim
 call dein#add('neoclide/coc.nvim', #{ rev: 'release' })
