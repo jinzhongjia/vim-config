@@ -193,6 +193,8 @@ call dein#add('ziglang/zig.vim')
 
 " call dein#add('dstein64/vim-startuptime')
 
+call dein#add('sheerun/vim-polyglot')
+
 call dein#end()
 
 " 启动时自动安装插件
