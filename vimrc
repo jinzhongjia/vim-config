@@ -167,10 +167,8 @@ if !has('nvim')
   call dein#add('roxma/vim-hug-neovim-rpc')
 endif
 
-" if !has('win32')
 " vim-floaterm
 call dein#add('voldikss/vim-floaterm')
-" endif
 
 " gruvbox theme support
 call dein#add('morhetz/gruvbox')
@@ -187,11 +185,6 @@ call dein#add('skywind3000/asynctasks.vim', {'depends':'skywind3000/asyncrun.vim
 call dein#add('skywind3000/asyncrun.vim')
 
 call dein#add('tpope/vim-commentary')
-
-" zig.vim
-call dein#add('ziglang/zig.vim')
-
-" call dein#add('dstein64/vim-startuptime')
 
 call dein#add('sheerun/vim-polyglot')
 
@@ -298,7 +291,7 @@ let g:asyncrun_open = 6
 
 " setting for coc.nvim
 
-let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-marketplace', 'coc-tsserver', 'coc-go', 'coc-spell-checker', 'coc-markdownlint', 'coc-eslint','coc-snippets','coc-sumneko-lua','coc-pairs','coc-lists','coc-docker','coc-zls','coc-highlight','coc-translator','coc-yaml','coc-explorer','coc-clangd','coc-html','coc-rust-analyzer','coc-symbol-line','coc-html-css-support','coc-lightbulb','@yaegassy/coc-pylsp','coc-css','coc-cmake','coc-sh','coc-sql','@yaegassy/coc-volar','@yaegassy/coc-volar-tools','coc-vimlsp','coc-yank','coc-emmet','coc-prettier','coc-toml','coc-xml','coc-calc','coc-typos', 'coc-explorer']
+let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-marketplace', 'coc-tsserver', 'coc-go', 'coc-spell-checker', 'coc-markdownlint', 'coc-eslint','coc-snippets','coc-sumneko-lua','coc-pairs','coc-lists','coc-docker','coc-zls','coc-highlight','coc-translator','coc-yaml','coc-explorer','coc-clangd','coc-html','coc-rust-analyzer','coc-symbol-line','coc-html-css-support','coc-lightbulb','@yaegassy/coc-pylsp','coc-css','coc-cmake','coc-sh','coc-sql','@yaegassy/coc-volar','coc-vimlsp','coc-yank','coc-emmet','coc-prettier','coc-toml','coc-xml','coc-calc','coc-typos', 'coc-explorer']
 
 " explorer
 nmap <space>e <Cmd>CocCommand explorer<CR>
